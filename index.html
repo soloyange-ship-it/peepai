@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Школьный репетитор — AI-чат</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="hero">
+        <div>
+          <p class="badge">AI-чат для школьников</p>
+          <h1>Репетитор, который помогает понять, а не просто решить</h1>
+          <p class="subtitle">
+            Один фокус — учеба в школе: математика, русский, физика, химия и
+            биология. Отвечаем пошагово и объясняем простыми словами.
+          </p>
+          <ul class="features">
+            <li>Только школьные темы и домашние задания</li>
+            <li>Подсказывает план решения и проверяет понимание</li>
+            <li>Просит контекст, если задача сформулирована не полностью</li>
+          </ul>
+        </div>
+        <div class="hero-card">
+          <p class="hero-card__title">Что умеет чат</p>
+          <p class="hero-card__text">
+            Объяснить тему, разобрать задачу, дать подсказки и помочь подготовиться
+            к контрольной.
+          </p>
+          <div class="hero-card__note">Без ответов «просто так».</div>
+        </div>
+      </header>
+
+      <main class="chat">
+        <section class="chat__window" id="chatWindow" aria-live="polite">
+          <article class="message message--bot">
+            <div class="message__meta">AI-репетитор</div>
+            <div class="message__bubble">
+              Привет! Я помогаю только со школьными предметами. Напиши тему или
+              задачу, и я подскажу план решения.
+            </div>
+          </article>
+        </section>
+
+        <section class="chat__controls">
+          <div class="hint">
+            Пример: «Объясни теорему Пифагора» или «Как решать задачи на проценты?»
+          </div>
+          <form class="chat__form" id="chatForm">
+            <label class="sr-only" for="userInput">Введите сообщение</label>
+            <input
+              id="userInput"
+              name="userInput"
+              type="text"
+              placeholder="Напишите задачу или тему"
+              autocomplete="off"
+              required
+            />
+            <button type="submit">Отправить</button>
+          </form>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>© 2025 Школьный AI-репетитор. Мы объясняем и учим, а не решаем за вас.</p>
+      </footer>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
